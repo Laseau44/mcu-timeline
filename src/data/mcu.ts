@@ -623,7 +623,7 @@ export const mcuEntries: MCUEntry[] = [
         tmdb_id: 986056,
         tmdb_type: 'movie',
         description: 'Un groupe d\'anti-héros et de vilains réformés est recruté par le gouvernement pour des missions dangereuses.',
-        upcoming: true,
+        upcoming: false,
     },
     {
         id: 'ironheart',
@@ -636,7 +636,7 @@ export const mcuEntries: MCUEntry[] = [
         tmdb_id: 114471,
         tmdb_type: 'tv',
         description: 'Riri Williams, génie inventrice du MIT, crée sa propre armure et se heurte au mystérieux Parker Robbins, alias le Hood.',
-        upcoming: true,
+        upcoming: false,
     },
     // ── Phase 6 ──
     {
@@ -650,7 +650,7 @@ export const mcuEntries: MCUEntry[] = [
         tmdb_id: 617126,
         tmdb_type: 'movie',
         description: 'La première famille de Marvel fait ses premiers pas dans le MCU, explorant un univers rétro-futuriste menacé par Galactus.',
-        upcoming: true,
+        upcoming: false,
     },
         {
         id: 'spider-man-brand-new-day',
