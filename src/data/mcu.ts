@@ -469,21 +469,8 @@ export const mcuEntries: MCUEntry[] = [
         upcoming: false,
     },
     {
-        id: 'ms-marvel',
-        number: 34,
-        title: 'Ms. Marvel',
-        narrative_year: '2025',
-        type: 'series',
-        release_date: '2022-06-08',
-        phase: 4,
-        tmdb_id: 92782,
-        tmdb_type: 'tv',
-        description: 'Kamala Khan, adolescente fan des Avengers, découvre qu\'elle possède des pouvoirs cosmiques liés à un bracelet ancien.',
-        upcoming: false,
-    },
-    {
         id: 'black-panther-wakanda-forever',
-        number: 35,
+        number: 34,
         title: 'Black Panther: Wakanda Forever',
         narrative_year: '2025',
         type: 'film',
@@ -496,7 +483,7 @@ export const mcuEntries: MCUEntry[] = [
     },
      {
         id: 'thor-love-and-thunder',
-        number: 36,
+        number: 35,
         title: 'Thor : Love and Thunder',
         narrative_year: '2025',
         type: 'film',
@@ -510,7 +497,7 @@ export const mcuEntries: MCUEntry[] = [
     // ── Phase 5 ──
     {
         id: 'guardians-galaxy-3',
-        number: 37,
+        number: 36,
         title: 'Les Gardiens de la Galaxie Vol. 3',
         narrative_year: '2025',
         type: 'film',
@@ -522,21 +509,8 @@ export const mcuEntries: MCUEntry[] = [
         upcoming: false,
     },
     {
-        id: 'secret-invasion',
-        number: 38,
-        title: 'Secret Invasion',
-        narrative_year: '2025',
-        type: 'series',
-        release_date: '2023-06-21',
-        phase: 5,
-        tmdb_id: 114472,
-        tmdb_type: 'tv',
-        description: 'Nick Fury découvre une invasion Skrull infiltrant les plus hautes sphères du pouvoir mondial.',
-        upcoming: false,
-    },
-    {
         id: 'loki-s2',
-        number: 39,
+        number: 37,
         title: 'Loki — Saison 2',
         narrative_year: 'Hors temps (TVA)',
         type: 'series',
@@ -549,7 +523,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'the-marvels',
-        number: 40,
+        number: 38,
         title: 'The Marvels',
         narrative_year: '2025',
         type: 'film',
@@ -562,7 +536,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'deadpool-wolverine',
-        number: 41,
+        number: 39,
         title: 'Deadpool & Wolverine',
         narrative_year: 'Multivers',
         type: 'film',
@@ -575,7 +549,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'agatha-all-along',
-        number: 42,
+        number: 40,
         title: 'Agatha All Along',
         narrative_year: '2025',
         type: 'series',
@@ -588,7 +562,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'captain-america-brave-new-world',
-        number: 43,
+        number: 41,
         title: 'Captain America: Brave New World',
         narrative_year: '2025',
         type: 'film',
@@ -601,7 +575,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'daredevil-born-again',
-        number: 44,
+        number: 42,
         title: 'Daredevil: Born Again',
         narrative_year: '2025',
         type: 'series',
@@ -614,7 +588,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'thunderbolts',
-        number: 45,
+        number: 43,
         title: 'Thunderbolts*',
         narrative_year: '2025',
         type: 'film',
@@ -625,23 +599,10 @@ export const mcuEntries: MCUEntry[] = [
         description: 'Un groupe d\'anti-héros et de vilains réformés est recruté par le gouvernement pour des missions dangereuses.',
         upcoming: false,
     },
-    {
-        id: 'ironheart',
-        number: 46,
-        title: 'Ironheart',
-        narrative_year: '2025',
-        type: 'series',
-        release_date: '2025-06-24',
-        phase: 5,
-        tmdb_id: 114471,
-        tmdb_type: 'tv',
-        description: 'Riri Williams, génie inventrice du MIT, crée sa propre armure et se heurte au mystérieux Parker Robbins, alias le Hood.',
-        upcoming: false,
-    },
     // ── Phase 6 ──
     {
         id: 'fantastic-four-first-steps',
-        number: 47,
+        number: 44,
         title: 'The Fantastic Four: First Steps',
         narrative_year: '2025',
         type: 'film',
@@ -654,7 +615,7 @@ export const mcuEntries: MCUEntry[] = [
     },
         {
         id: 'spider-man-brand-new-day',
-        number: 48,
+        number: 45,
         title: 'Spider-Man: Brand New Day',
         narrative_year: '2027',
         type: 'film',
@@ -667,7 +628,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'Vision-Quest',
-        number: 49,
+        number: 46,
         title: 'Vision Quest',
         narrative_year: '2028',
         type: 'series',
@@ -680,7 +641,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'avengers-doomsday',
-        number: 50,
+        number: 47,
         title: 'Avengers: Doomsday',
         narrative_year: '2027',
         type: 'film',
@@ -693,7 +654,7 @@ export const mcuEntries: MCUEntry[] = [
     },
     {
         id: 'avengers-secret-wars',
-        number: 51,
+        number: 48,
         title: 'Avengers: Secret Wars',
         narrative_year: '2027',
         type: 'film',
