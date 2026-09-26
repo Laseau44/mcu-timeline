@@ -69,6 +69,7 @@ export default function CataloguePage({ collection }: { collection: Collection }
       </button>
     </section>
 
+    <a className="journey-link" href="#/carte"><span><i aria-hidden="true">✧</i>Chaque histoire ouvre un autre monde.</span><strong>Explorer la carte ↗</strong></a>
     <section id="collection" className="catalogue-section" aria-labelledby="collection-title">
       <div className="collection-heading"><div><span className="eyebrow">{isMcu ? 'LE FIL DE L’HISTOIRE' : 'LES AUTRES UNIVERS'}</span><h2 id="collection-title">{isMcu ? 'La timeline MCU' : 'Le multivers Marvel'}<span>{movies.length}</span></h2><p>{isMcu ? 'Du premier Avenger aux prochaines aventures.' : 'Votre sélection : X-Men, Deadpool, Blade et les sagas Spider-Man.'}</p></div><div className="view-switch" role="group" aria-label="Mode d’affichage"><button className={view === 'grid' ? 'active' : ''} aria-label="Vue affiches" aria-pressed={view === 'grid'} onClick={() => changeView('grid')}><Icon name="grid" size={18}/></button><button className={view === 'list' ? 'active' : ''} aria-label="Vue liste" aria-pressed={view === 'list'} onClick={() => changeView('list')}><Icon name="list" size={20}/></button></div></div>
       <div className="catalogue-toolbar">
