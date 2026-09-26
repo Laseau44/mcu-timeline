@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ multiverse = false }: { multiverse?: boolean }) {
     return (
         <header className="header">
             <div className="marvel-logo">
@@ -8,9 +8,9 @@ export default function Header() {
                     className="marvel-img"
                 />
             </div>
-            <h1 className="header-title">MCU Timeline</h1>
+            <h1 className="header-title">{multiverse ? 'Marvel Timeline' : 'MCU Timeline'}</h1>
             <p className="header-subtitle">
-                L'ordre chronologique complet du Marvel Cinematic Universe
+                {multiverse ? 'Le guide de visionnage Marvel, univers par univers' : "L'ordre chronologique complet du Marvel Cinematic Universe"}
             </p>
         </header>
     );

@@ -103,13 +103,16 @@ export const useStore = create<StoreState>((set, get) => ({
     },
 
     resetAll: () => {
-        const empty: Record<string, WatchStatus> = {};
-        set({ statuses: empty });
-        saveLocal(empty);
-        // Also clear supabase
+        const mcuIds = new Set(mcuEntries.map((entry) => entry.id));
+        const remaining = Object.fromEntries(
+            Object.entries(get().statuses).filter(([id]) => !mcuIds.has(id))
+        ) as Record<string, WatchStatus>;
+        set({ statuses: remaining });
+        saveLocal(remaining);
+        // Clear MCU entries only; the other universes have separate progress.
         if (supabase) {
             const sessionId = getSessionId();
-            supabase.from('watch_status').delete().eq('session_id', sessionId).then();
+            supabase.from('watch_status').delete().eq('session_id', sessionId).in('entry_id', [...mcuIds]).then();
         }
     },
 
@@ -131,7 +134,7 @@ export const useStore = create<StoreState>((set, get) => ({
 }));
 
 // Derived helpers
-export function getFilteredEntries(state: StoreState) {
+export function getFilteredEntries(state: Pick<StoreState, 'typeFilter' | 'statusFilter' | 'searchQuery' | 'statuses'>) {
     return mcuEntries.filter((entry) => {
         if (state.typeFilter !== 'all' && entry.type !== state.typeFilter) return false;
         if (state.statusFilter !== 'all') {
